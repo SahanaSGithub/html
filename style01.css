@@ -1,0 +1,41 @@
+/*element selection*/
+p {
+    color: blueviolet
+}
+
+/*id selector*/
+#navbar {
+    background-color: rgb(106, 199, 236);
+}
+
+/*descendent combinator (Space)*/
+#navbar a {
+    text-decoration: none;
+    padding: 50px;
+}
+
+/*class selector*/
+.head {
+    color: brown;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px;
+}
+
+h2.head {
+    text-align: right;
+    text-decoration: overline;
+    color: black;
+}
+
+
+/*group selector*/
+p,
+ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*universal selector*/
+* {
+    text-transform: capitalize;
+}

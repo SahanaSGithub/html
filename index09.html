@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form </title>
+</head>
+
+<body>
+    Select fruits of your choice:
+    <input type="checkbox" name="fruit1" value="mango">mango
+    <input type="checkbox" name="fruit2" value="apple" checked>apple
+    <input type="checkbox" name="fruit3" value="kiwi">kiwi
+
+
+    <br><br><br>
+    Select fruits of your choice:
+    <input type="radio" name="fruit" value="mango">mango
+    <input type="radio" name="fruit" value="apple">apple
+    <input type="radio" name="fruit" value="kiwi">kiwi
+
+
+    <br><br><br>
+    <label for="Subjects">choose subjects:</label>
+    <select name="subjects" id="subs">
+        <option value="maths">maths</option>
+        <option value="tamil">tamil</option>
+        <option value="science">science</option>
+        <option value="physics">physics</option>
+    </select>
+
+
+    <br><br><br>
+    <label for="Subjects">choose subjects:</label>
+    <select name="subjects" id="subs">
+        <option value="maths">maths</option>
+        <option value="tamil">tamil</option>
+        <option value="science" selected>science</option>
+        <option value="physics">physics</option>
+    </select>
+
+    <br><br><br>
+    <label for="Subjects">choose subjects:</label>
+    <select name="subjects" id="subs" size="2">
+        <option value="maths">maths</option>
+        <option value="tamil">tamil</option>
+        <option value="science" selected>science</option>
+        <option value="physics">physics</option>
+        <option value="science">science</option>
+        <option value="physics">physics</option>
+    </select>
+
+    <br><br><br>
+    Select a Number:
+    <input type="number" name="num" id="num" value="0" size="5" max="100" min="0" step="5">
+
+    <br><br><br>
+    enter the date of birth:
+    <input type="date" name="dob" id="dob" max="2025-12-30" min="1990-12-30">
+
+    <br><br><br>
+    enter time:
+    <input type="time" name="curtime" id="ct">
+
+    <br><br><br>
+    <textarea name="about you" id="ay" rows="5" cols="30">
+        describe in 30 words...
+    </textarea>
+
+    <br><br><br>
+    enter email id:
+    <input type="email" name="email_id" id="email_id" required>
+
+    <br><br><br>
+    search box:
+    <input type="search" name="searchbox" id="sb">
+
+    <br><br><br>
+    url:
+    <input type="url" name="url" id="url">
+
+
+    <br><br><br>
+    <button onclick="document.location='http://www.google.com'">
+        GOOGLE
+    </button>
+
+
+</body>
+
+</html>
