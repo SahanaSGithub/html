@@ -8,14 +8,74 @@
     <style>
         div {
             background-color: aqua;
-            height: 210px;
-            width: 45%;
-            border: 5px solid rgb(188, 14, 153);
+            height: 300px;
+            width: 50%;
+            border: 10px solid rgb(188, 14, 153);
             border-radius: 40px;
             /*margin: 50px 100px 150px 200px;*/
             margin: auto;
             margin-top: 50px;
             padding: 10px 20px;
+            outline: 5px dashed black;
+            outline-offset: 5px;
+            overflow: auto;
+        }
+
+        h2 {
+            color: #bcadef;
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+
+        h3 {
+            color: rgb(0, 0, 120);
+            text-align: right;
+            text-decoration: overline;
+            text-decoration-style: double;
+            text-decoration-thickness: 2px;
+        }
+
+        p {
+            color: #f00000;
+            text-align: justify;
+            text-transform: capitalize;
+            text-shadow: #f00000;
+            text-shadow: 2px 2px 5px black, 2px 2px 5px blue;
+            letter-spacing: 3px;
+            /*letter spacing:-3px*/
+            line-height: 1.5;
+            word-spacing: 1.2;
+            text-align-last: right;
+        }
+
+        p::first-letter {
+            color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            font-variant: small-caps;
+            font-weight: 800;
+        }
+
+        p::first-line {
+            color: darkgreen;
+            font-size: medium;
+        }
+
+        p::selection {
+            background-color: black;
+            color: gold;
+        }
+
+        ul li::marker {
+            color: blue;
+        }
+
+        h2::before {
+            content: url("/images/icons8-favorite-50.png");
+        }
+
+        h2::after {
+            content: url("/images/icons8-favorite-50.png");
         }
     </style>
 </head>
@@ -27,6 +87,15 @@
             maxime
             sint nobis placeat, eveniet ipsa neque molestiae quaerat minus reprehenderit eligendi consequatur asperiores
             debitis.</p>
+        <h3 align="right">CSS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, qui illum nemo, nam similique aut fuga
+            neque eaque
+            , voluptatum doloremque blanditiis voluptatem consectetur est sint. Repellendus numquam quisquam libero
+            rerum.</p>
+        <ul>
+            <li>INLINE CSS</li>
+            <li>EXTERNAL CSS</li>
+        </ul>
     </div>
 </body>
 

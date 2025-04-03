@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LINK</title>
+    <style>
+        .container1 a {
+            color: rgb(10, 10, 210);
+            text-decoration: underline;
+        }
+
+        .container1 a:active {
+            color: rgb(173, 204, 50);
+        }
+
+        .container1 a:hover {
+            color: rgb(222, 31, 162);
+            text-decoration: underline;
+        }
+
+        .container1 a:visited {
+            color: red;
+        }
+
+        .container1+a {
+            display: inline-block;
+            border: 2px solid black;
+            margin-top: 5px;
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+            background-color: green;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <a href="http://www.google.com" target="_blank">Google</a>
+    </div>
+    <a href="index04.html" target="_parent">Click</a>
+</body>
+
+</html>
