@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Animation1</title>
+    <style>
+        div {
+            background-color: purple;
+            height: 50px;
+            width: 100px;
+            margin: 5px;
+            padding: auto;
+            border: 1px solid pink;
+            border-radius: 10px;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            animation-name: animal;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+
+        .div1 {
+            animation-timing-function: linear;
+        }
+
+        .div2 {
+            animation-timing-function: ease;
+        }
+
+        .div3 {
+            animation-timing-function: ease-in;
+        }
+
+        .div4 {
+            animation-timing-function: ease-in-out;
+        }
+
+        .div5 {
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes animal {
+            from {
+                left: 0px
+            }
+
+            to {
+                left: 200px
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Monkey</div>
+    <div class="div2">Donkey</div>
+    <div class="div3">Elephant</div>
+    <div class="div4">Dog</div>
+    <div class="div5">Pig</div>
+
+</body>
+
+</html>

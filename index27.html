@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script01.js"></script>
+    <style>
+        div {
+            font-family: 'Arial', sans-serif;
+            background-color: #35e4b0;
+            text-align: center;
+            margin: auto;
+            width: 400px;
+        }
+
+        .container {
+            background: white;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        button hover {
+            padding: 10px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Arithmetic Operation</h2>
+        Enter First Value:
+        <input type="text" id="num1" size="10"><br><br>
+        Enter Second Value:
+        <input type="text" id="num2" size="10"><br><br>
+
+        <button onclick="Sum()">SUM</button>
+        <button onclick="Sub()">Sub</button>
+        <button onclick="Mul()">Mul</button>
+        <button onclick="Div()">div</button>
+
+        <p id="demo"></p>
+    </div>
+</body>
+
+</html>

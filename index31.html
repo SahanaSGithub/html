@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <h3 id="demo"></h3>
+    <ul id="list"></ul>
+    <script>
+        //Objects
+        const person = {
+            firstname: 'Rethamya',
+            lastname: 'Kannan',
+            age: 21,
+            fullname: function () {
+                return 'I am ' + this.firstname + ' ' + this.lastname;
+            }
+        }
+        /*document.getElementById('demo')
+        .innerHTML=I am ${person.firstname} ${person.lastname};*/
+        //Adding property
+        person.nationality = 'Indian';
+        /*let txt='';
+        for(let x in person){
+            txt+='<li>'+person[x]+'</li>'
+        }
+        document.getElementById('list').innerHTML=txt;*/
+        //Calling a property
+        document.getElementById('demo')
+            .innerHTML = person.fullname();
+    </script>
+</body>
+
+</html>

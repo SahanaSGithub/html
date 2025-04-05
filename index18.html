@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        div {
+            background-color: pink;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            position: relative;
+            box-shadow: 2px 2px 10px black;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            animation-name: ball;
+            animation-duration: 4s;
+            animation-iteration-count: 5;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes ball {
+
+            /* from{background-color: aqua;}to{background-color:violet};*/
+            0% {
+                background-color: blue;
+                left: 0px;
+                top: 0px
+            }
+
+            25% {
+                background-color: green;
+                left: 200px;
+                top: 0px
+            }
+
+            50% {
+                background-color: yellow;
+                left: 200px;
+                top: 200px
+            }
+
+            75% {
+                background-color: orange;
+                left: 0px;
+                top: 200px
+            }
+
+            100% {
+                background-color: purple;
+                left: 0px;
+                top: 0px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+
+</body>
+
+</html>

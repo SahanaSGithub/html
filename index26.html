@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav>ul {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        nav>ul li {
+            list-style-type: none;
+            padding: 10px;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        nav>ul li a {
+            text-decoration: none;
+        }
+
+        nav>ul li a:hover {
+            color: blue;
+            font-size: x-large;
+        }
+
+        @media screen and (max-width:400px) {
+            nav>ul {
+                display: block;
+            }
+
+            nav>ul li {
+                text-align: center;
+                font-size: medium;
+            }
+        }
+
+        /*body{
+            background-color: aquamarine;
+        }
+        @media screen and (max-width:500px){
+            body{
+                background-color: blueviolet;
+            }
+        }
+        @media screen and (max-width:300px){
+            body{
+                background-color: blue;
+            }
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">AboutUs</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

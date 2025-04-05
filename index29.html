@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+</head>
+
+<body id="container">
+    Enter Red:
+    <input type="text" id="color">
+    <button onclick="Change()">Click Me</button>
+    <script>
+        //conditional ternary operator
+        function Change() {
+            let Color = document.getElementById('color').value;
+            let new_color = (color == 'red') ? 'red' : 'yellow';
+            document.getElementById('container')
+                .stylebackgroundColor = new_color;
+        }
+    </script>
+</body>
+
+</html>

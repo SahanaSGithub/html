@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statement</title>
+</head>
+
+<body>
+    <ul>
+        <li>Pink = 1</li>
+        <li>Purple = 2</li>
+        <li>Lightgreen = 3</li>
+        <li>Violet = 4</li>
+    </ul>
+    Enter Your Number:
+    <input type="text" name="num" id="num" oninput="Change()">
+    <h1 id="demo"></h1>
+    <script>
+        /* function Change() {
+             let numb = parseInt(document.getElementById('num').value);
+             if (numb == 1) {
+                 document.getElementById('demo').innerHTML = 'Pink Color';
+                 document.getElementById('demo').style.backgroundColor = 'Pink';
+             }
+             else if (numb == 2) {
+                 document.getElementById('demo').innerHTML = 'Purple Color';
+                 document.getElementById('demo').style.backgroundColor = 'Purple';
+             }
+             else if (numb == 3) {
+                 document.getElementById('demo').innerHTML = 'Lightgreen Color';
+                 document.getElementById('demo').style.backgroundColor = 'Lightgreen';
+             }
+             else if (numb == 4) {
+                 document.getElementById('demo').innerHTML = 'Violet Color';
+                 document.getElementById('demo').style.backgroundColor = 'Violet';
+             }
+             else {
+                 document.getElementById('demo').innerHTML = 'No Color';
+                 document.getElementById('demo').style.color = 'white';
+                 document.getElementById('demo').style.backgroundColor = 'black';
+             }
+ 
+ 
+ 
+         }*/
+        switch (numb) {
+            case 1:
+                document.getElementById('demo').innerHTML = 'Pink Color';
+                document.getElementById('demo').style.backgroundColor = 'Pink';
+                break;
+
+            case 2:
+                document.getElementById('demo').innerHTML = 'Purple Color';
+                document.getElementById('demo').style.backgroundColor = 'Purple';
+                break;
+
+            case 3:
+                document.getElementById('demo').innerHTML = 'Lightgreen Color';
+                document.getElementById('demo').style.backgroundColor = 'Lightgreen';
+                break;
+            case 4:
+                document.getElementById('demo').innerHTML = 'Violet Color';
+                document.getElementById('demo').style.backgroundColor = 'Violet';
+                break;
+            default:
+                document.getElementById('demo').innerHTML = 'No Color';
+                document.getElementById('demo').style.color = 'white';
+                document.getElementById('demo').style.backgroundColor = 'black';
+                break;
+        }
+    </script>
+
+</body>
+
+</html>

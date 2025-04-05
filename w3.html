@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3Schools Clone</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Logo */
+        .logo {
+            height: 50px;
+            width: auto;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        /* Top Logo Area */
+        .top-header {
+            background-color: #222;
+            height: 70px;
+            position: relative;
+        }
+
+        /* Scrolling Navigation */
+        .scrolling-nav {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #333;
+        }
+
+        .scrolling-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .scrolling-nav li {
+            margin: 0;
+        }
+
+        .scrolling-nav a {
+            display: inline-block;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .scrolling-nav a:hover {
+            background-color: #011001;
+        }
+
+        /* Hero Header */
+        .hero-header {
+            background-image: url('images/background_in_space.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 60px 20px 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .hero-header p {
+            font-size: 20px;
+            color: burlywood;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            min-width: 200px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .search-bar button {
+            padding: 10px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #388e3c;
+        }
+
+        h4 p {
+            text-decoration: underline;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .button-container button {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            background-color: #d8f1a1;
+            color: rgb(14, 1, 1);
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+
+        .scrolling-nav {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Logo -->
+    <header class="top-header">
+        <img src="images/w3.png" alt="W3Schools Logo" class="logo" />
+    </header>
+
+    <!-- Scrolling Nav Bar -->
+    <nav class="scrolling-nav">
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JavaScript</a></li>
+            <li><a href="#SQL">SQL</a></li>
+            <li><a href="#python">PYTHON</a></li>
+            <li><a href="#Java">JAVA</a></li>
+            <li><a href="#php">PHP</a></li>
+            <li><a href="#c">C</a></li>
+            <li><a href="#Numpy">NUMPY</a></li>
+            <li><a href="#xml">XML</a></li>
+            <li><a href="#cpp">C++</a></li>
+            <li><a href="#Django">DJANGO</a></li>
+            <li><a href="#BOOTSTRAP">BOOTSTRAP</a></li>
+            <li><a href="#MYSQL">MYSQL</a></li>
+            <li><a href="#JQUERY">JQUERY</a></li>
+            <li><a href="#EXCEL">EXCEL</a></li>
+        </ul>
+    </nav>
+
+    <!-- Learn to Code Section -->
+    <section class="hero-header">
+        <h1>Learn to Code</h1>
+        <p>With the world's largest web developer site.</p>
+        <form class="search-bar">
+            <input type="text" placeholder="Search tutorials..." />
+            <button type="submit">Search</button>
+        </form>
+        <h4>
+            <p>Not sure Where to Begin?</p>
+        </h4>
+    </section>
+
+    <!-- HTML Section -->
+    <section id="html">
+        <h2 align="center">HTML Tutorial</h2>
+        <p align="center">The language for building web pages.</p>
+        <div class="button-container">
+            <button>LEARN</button>
+            <button>VIDEO</button>
+            <button>REFERENCE</button>
+            <button>CERTIFIED</button>
+        </div>
+    </section>
+
+    <!-- CSS Section -->
+    <section id="css">
+        <h2 align="center">CSS Tutorial</h2>
+        <p align="center">The language for styling web pages</p>
+        <div class="button-container">
+            <button>LEARN</button>
+            <button>VIDEO</button>
+            <button>REFERENCE</button>
+            <button>CERTIFIED</button>
+        </div>
+    </section>
+
+    <!-- JavaScript Section -->
+    <section id="js">
+        <h3 align="center">JavaScript Tutorial</h3>
+        <p align="center">JavaScript is a programming language used to make webpages interactive.</p>
+        <div class="button-container">
+            <button>LEARN</button>
+            <button>VIDEO</button>
+            <button>REFERENCE</button>
+            <button>CERTIFIED</button>
+        </div>
+    </section>
+</body>
+
+</html>
